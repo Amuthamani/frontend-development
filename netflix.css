@@ -1,0 +1,123 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   
+  }
+    #bg1{
+        /* background-image: url("netflix back image1.jpg"); */
+        height: 100vh;
+        width: 100vw;
+    }
+    #img{
+       height:10vh;
+        width: 20vw;
+        background-color: transparent;
+    }
+    .img1{
+      height: 100vh;
+      width: 100vw;
+    }
+
+
+    
+    .size{
+        width: 350px;
+        height: 35px;
+        color: white;
+        background-color: transparent;
+        border-radius: 10px;
+    }
+    #btn1{
+        background-color: red;
+        color: white;
+        width: 70px;
+        height: 35px;
+        border-radius: 10px;
+
+    }
+    #btn2{
+        height: 40px;
+        width: 100px;
+        background-color: red;
+    }
+    .accordion-button{
+      font-size: 30px;
+      background-color: black;
+      
+    
+    }
+    #accordionExample{
+      width: 70vw;
+      margin-left: 200px;
+      
+      color: white;
+    }
+   
+    /* #img1{
+      height: 100vh;
+      width:100vw ;
+    }
+   */
+   .bg1{
+     background: linear-gradient(rgb(2, 2, 33),rgb(88, 15, 66));
+     height: 300px;
+     width: 250px;
+     margin-top: 50px;
+     border-radius: 30px;
+     
+   }
+   #boxing{
+    
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+    
+   
+   }
+   #grid{
+    display: grid;
+    background-color: black;
+    color: white;
+   
+   }
+   h3{
+    margin-left: 50px;
+   }
+   #grid1{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: space-around;
+    color: white;
+
+   }
+   #bg2{
+    background-color: black;
+    color: white;
+   }
+   #size1{
+    width: 50vw;
+    background: transparent;
+
+   }
+   #bg3{
+    background-color: black;
+    color: white;
+   
+   }
+   .abblack{
+    background-color: black;
+   }
+   
+   #flex{
+        display: flex;
+        justify-content: space-around;
+       
+   }
+   
+
+  #accordionbtn{
+     background-color: black;
+   }
+   #image{
+    filter: blur(2px);
+   }
+   

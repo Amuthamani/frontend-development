@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .c1{
+        background-color: blue;
+        height: 50px;
+       }
+    </style>
+</head>
+<body>
+    <p class="c1">hello</p>
+    
+    <!-- onclick and doubleclick -->
+    <button ondblclick="Hide()">hide</button>  
+
+   <button onclick="show()">show</button>
+    <input type="text" onchange="change(event)"> 
+    <div id="p1"></div><br><br>
+    <div id="d1"> this is Amuthamani</div>
+    <button  onclick="done()">done</button><br><br>
+    <div id="d2">hello</div>
+    <button id="btn1">successfully done</button>
+    <!-- we shold use event only -->
+    <script>
+        //addEventListener
+        document.getElementById("btn1").addEventListener("click",success)
+        var input;
+        input=e.target.value
+        function Hide(){
+            document.getElementsByClassName("c1")[0].style="visibility :hidden"
+        }
+        function show(){
+            document.getElementsByClassName("c1")[0].style="display:block"
+            document.getElementById("p1").innerHTML=input
+            setInterval(()=>{
+                console.log("amutha");
+            })
+        }
+        function change(e){
+            console.log(e.target.value);
+            input=e.target.value
+           
+        }
+        function done(){
+            document.getElementById("d1").style="font-size:50px"
+
+        }
+        function success(){
+            document.getElementById("d2").style="visibility :hidden"
+
+        }
+
+    </script>
+   
+</body>
+</html>

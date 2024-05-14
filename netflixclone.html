@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #kayal{
+      height:20vh;
+      width:20vw;
+      background-color: blue;
+      animation-name: example;
+      animation-duration: 5s;
+     animation-iteration-count:infinite ;
+
+    }
+    @keyframes example {
+      10%{
+          background-color: red;
+          border-radius: 30px;
+          width: 50px;
+      }
+      50%{
+        background-color: yellow;
+        border-radius: 10px;
+        height: 50;
+        transform: translateX(50%);
+
+      }
+      100%{
+        background-color: aqua;
+        border-radius: 100px;
+        transform: translateY(50%);
+      }
+      
+    }
+  </style>
+</head>
+<body>
+  <div id="kayal">
+
+  </div>
+</body>
+</html>

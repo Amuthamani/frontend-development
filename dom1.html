@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .cla{
+            color: yellow;
+        }
+        .cla1{
+            font-size: 50px;
+        }
+        #n1{
+            background-color: blue;
+            font-size: 50px;
+          
+        }
+    </style>
+
+</head>
+<body >
+    <div >
+        <p id="p1"></p>
+        <p id="p2" class="cla"> im a frontend developer</p>
+        
+        <p id="p3"></p>
+        <div id="n1">
+
+        </div>
+
+    </div>
+    
+    <script>
+        
+        
+        document.getElementById("p1").innerHTML="<strong>amutha</strong>"
+        document.getElementById("p1").innerText="<strong>amutha</strong>"
+        let word=document.getElementById("p2").textContent
+        console.log(word);
+        document.getElementById("p3").innerText=word
+        //create a new element 
+        let newTag=document.createElement("p")
+        newTag.id=("p4")
+        newTag.textContent="newly created tag or element"
+        document.getElementById("n1").appendChild(newTag)
+        //add and remove using classlist
+        document.getElementById("p2").classList.remove("cla")  //remove the class
+        document.getElementById("p2").classList.add("cla1")    //add the class
+            
+
+    </script>
+</body>
+</html>

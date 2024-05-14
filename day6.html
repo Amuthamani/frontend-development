@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .box1{
+        background-color: chartreuse;
+            height: 30vh;
+            width: 15vw;
+            border-radius: 25px;
+            border:2px solid black ;
+            box-shadow: 10px 10px 10px 5px red;
+            position: absolute;
+            z-index: 1;
+           
+        }
+        
+        .box2{
+        background-color: chartreuse;
+            height: 30vh;
+            width: 15vw;
+            border-radius: 25px;
+            border:2px solid black ;
+            box-shadow: 10px 10px 10px 5px red;
+            z-index: -1;
+            margin-top: 50px;
+            margin-left: 50px;
+          
+        }
+        .box1:hover{
+            background-color: blue;
+            transition: 2s ease-out;
+
+        }
+        
+        
+        .box2:hover{
+            background-color: blue;
+            transition: 2s ease-out;
+        }
+       #flex{
+            display: flex;
+       }
+        #ts{
+            /* color: aqua; */
+            text-shadow: 10px 10px 10px blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="flex">
+
+       <div class="box1">
+
+       </div>
+       <div class="box2">
+
+       </div>
+    </div>
+   <h1 id="ts">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, esse.</h1>
+</body>
+</html>

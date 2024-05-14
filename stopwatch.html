@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #btn1{
+            background-color: rgb(40, 237, 40);
+            border-radius: 15px;
+          
+        }
+        #btn2{
+            background-color: rgb(245, 13, 13);
+            border-radius: 15px;
+        }
+        
+      
+          </style>
+</head>
+<body>
+ <div id="d1">
+   <button id="btn1">startwatch</button>
+   <button id="btn2">stopwatch</button>
+ </div>
+<script>
+    //arrow function used here
+    var startwatch=()=>{
+          time=  setInterval(()=>{
+                 console.log("start counting");
+            },1000)
+
+        }
+    var stopwatch=()=>{
+        clearInterval(time)
+    }
+        document.getElementsByTagName("button")[0].addEventListener("click",startwatch)
+        document.getElementsByTagName("button")[1].addEventListener("click",stopwatch)
+   
+
+</script>
+    
+</body>
+</html>
